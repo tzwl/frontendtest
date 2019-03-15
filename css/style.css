@@ -310,10 +310,7 @@ html, body {
   color: #FFFFFF;
 }
 
-.social-logo a:hover,
-.top-header-list a:hover,
-.share-btn:hover,
-.top-header-btn #icon:hover {
+.social-logo a:hover, .top-header-list a:hover, .share-btn:hover, .top-header-btn #icon:hover, .vertical-text:hover {
   opacity: 0.6;
 }
 
@@ -485,16 +482,17 @@ footer .dummy .col-md-3 {
   height: 100%;
   margin-top: 6em;
 }
-.top-header-btn{
-  font-size: 21px;     
+
+.top-header-btn {
+  font-size: 21px;
 }
-.top-header-list{
+
+.top-header-list {
   display: none;
   color: #000;
 }
-#top-section #dev,
-#top-section #comp,
-#top-section #arrow{  
+
+#top-section #dev, #top-section #comp, #top-section #arrow {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: bold;
@@ -502,37 +500,43 @@ footer .dummy .col-md-3 {
   line-height: 68px;
   text-align: center;
   letter-spacing: 0.33px;
-  text-transform: uppercase;  
-  color: #849;
-
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
-#top-section #dev{
+
+#top-section #dev {
   position: absolute;
   padding-top: 35em;
   padding-left: 6em;
 }
-#top-section #comp{
+
+#top-section #comp {
   position: absolute;
   padding-top: 37em;
   padding-left: 10em;
 }
-#top-section #arrow{
+
+#top-section #arrow {
   position: absolute;
   padding-top: 40em;
   padding-left: 20em;
 }
-#vertical-body{
-    display: none;
 
+.vertical-body {
+  display: none;
 }
 
 /*---Media Queries --*/
 
 @media (max-width: 992px) {}
 
-@media (min-width: 576px) {
+@media (min-width: 576px) { 
+  
   .bigmap {
     display: inline;
+  }
+  .vertical-nav {
+    display: none;
   }
   .mapcap, .mapimg {
     display: none;
@@ -569,9 +573,8 @@ footer .dummy .col-md-3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
   }
-  #top-left-section {    
+  #top-left-section {
     height: 100%;
     width: 3em;
     padding: 0;
@@ -582,26 +585,23 @@ footer .dummy .col-md-3 {
     margin-left: 3em;
     margin-top: 0px;
   }
-  .top-header-btn{
+  .top-header-btn {
     color: #FFFFFF;
     background-color: #313541;
     text-align: center;
-    font-size: 24px;    
+    font-size: 24px;
     padding-top: 1em;
     padding-bottom: 10em;
   }
-  .top-header-list{  
+  .top-header-list {
     padding-top: 8em;
     height: 100%;
     text-align: center;
     font-size: 17px;
   }
- /* #top-section #dev,
-  #top-section #comp,
-  #top-section #arrow{ 
-
-  }*/
-  
+  #top-section #dev, #top-section #comp, #top-section #arrow {
+    display: none;
+  }
   #menu-bar ul {
     list-style-type: none;
     margin: 0;
@@ -611,7 +611,6 @@ footer .dummy .col-md-3 {
   #menu-bar li {
     float: right;
   }
-
   #menu-bar li a {
     display: block;
     text-align: center;
@@ -624,22 +623,80 @@ footer .dummy .col-md-3 {
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-
     color: #000000;
   }
-  #menu-bar #thalescode{
+  #menu-bar #thalescode {
     font-family: Helvetica;
     font-size: 15px;
     line-height: 110px;
     letter-spacing: 5px;
-    
   }
   #menu-bar li a:hover:not(.title) {
     opacity: 0.4;
   }
+  .top-body #small-scrn {
+    display: none;
+  }
+  .top-body {
+    margin-left: 3em;
+    margin-top: 3em;
+    float: left;
+    text-align: left;
+  }
+  .top-body .stroke {
+    margin-left: 0px;
 
+  }
+  #black-btn-1, #black-btn-2 {
+    background: #000;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: 0.5em 3em 0.5em 3em;
+    margin-top:2em;
+    
+  }
+  #black-btn-2{
+    margin-left: 2em;
+  }
+  #top-message{
+    margin-top: 3em;
+    width: 638;
+    height: 257;
+    background: #FFFFFF;
+    padding: 4em;
+    font-size: 15px;
+    color: #000;
+  }
+  #top-message p{
+    opacity: 0.3;
+  }
+  
+  #header-img img{
+    position: absolute;
+    right: 8%;
+    top: 20%;
+    
+  }
+  #about-section{
+    display: none;
+  }
+  #font-14{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;    
+    color: #000000;    
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    width: 550px;
+  }
+  #about-2 .stroke{
+    margin-left: 0px;
+    width: 40px;
 
-
+  }
 
 }
 
@@ -652,40 +709,54 @@ footer .dummy .col-md-3 {
     top: 20px;
     opacity: 0.3;
   }
-  footer .dummy .col-md-3 {
+  footer .dummy .col-md-3,#about-2 {
     display: none;
   }
   footer .my-1 {
     display: none;
   }
-  #menu-bar{
+  #menu-bar {
     display: none;
   }
-  #vertical-header{
+  .vertical-nav {
+    display: block;
     position: absolute;
-    display: block;
-    left: 0;
+    left: 0%;
   }
-  #vertical-thalescode{
+  .vertical-nav .vertical-text {
     display: block;
-
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 9px;
-    letter-spacing: 1.08px;
-    color: #000000;
+    padding-top: 12.5em;
+    padding-left: 7em;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg);    
-    padding-top: 9em;
-    padding-left: 2em;
+    transform: rotate(90deg);
   }
-
+  #vertical-item {
+    position: absolute;
+    list-style-type: none;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+  }
+  #vertical-item li {
+    display: block;
+    background: grey;
+    box-sizing: border-box;
+    padding: 0 1em 0 1em;
+    border-radius: 9px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+  .top-body #big-scrn, .top-body .stroke ,
+  #black-btn-1, #black-btn-2,#top-message,#header-img {
+    display: none;
+  }
+  .top-body {
+    margin-top: 10px;
+  }
   
-
 }
 
 /*---Firefox Bug Fix --*/
