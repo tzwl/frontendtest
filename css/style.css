@@ -3,7 +3,6 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'ubuntu';
-  background-color: #ffffff;
 }
 
 .row {
@@ -23,7 +22,6 @@ html, body {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: bold;
-  line-height: 20px;
   font-size: 15px;
   color: #09ACF8;
   margin-bottom: -10px;
@@ -265,7 +263,6 @@ html, body {
   line-height: 20px;
   font-size: 14px;
   text-align: justify;
-  letter-spacing: -0.1px;
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.6;
@@ -313,7 +310,10 @@ html, body {
   color: #FFFFFF;
 }
 
-.social-logo a:hover {
+.social-logo a:hover,
+.top-header-list a:hover,
+.share-btn:hover,
+.top-header-btn #icon:hover {
   opacity: 0.6;
 }
 
@@ -330,7 +330,6 @@ html, body {
 .img-text hr {
   margin-left: 0px;
 }
-
 
 .img-text p .text-size-11 {
   font-size: 11px;
@@ -385,8 +384,8 @@ html, body {
   mix-blend-mode: normal;
   opacity: 0.4;
 }
-form input,
-form textarea{
+
+form input, form textarea {
   border: 1px solid #DCE0E8;
   box-sizing: border-box;
   font-family: Ubuntu;
@@ -399,7 +398,8 @@ form textarea{
   border-radius: 0%;
   opacity: 0.4;
 }
-form .btn{
+
+form .btn {
   background: #2B3247;
   font-family: Ubuntu;
   font-style: normal;
@@ -411,55 +411,61 @@ form .btn{
   color: #FFFFFF;
 }
 
-.mapcap{
+.mapcap {
   position: relative;
   left: 40%;
   bottom: 45%;
-  
 }
-.bigmap{
+
+.bigmap {
   display: none;
 }
-footer{
+
+footer {
   padding-bottom: 35px;
 }
-footer .my-1{
+
+footer .my-1 {
   display: none;
 }
-footer .header{
+
+footer .header {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
   color: #000000;
 }
-footer p{
+
+footer p {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;  
-  color: #000000;  
+  font-size: 10px;
+  color: #000000;
   mix-blend-mode: normal;
-  opacity: 0.5;  
+  opacity: 0.5;
 }
-footer form #subscrib{
+
+footer form #subscrib {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;  
-  color: #000000;  
+  font-size: 11px;
+  color: #000000;
   mix-blend-mode: normal;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 0%;
   opacity: 0.2;
 }
-footer .dummy .col-md-3{
+
+footer .dummy .col-md-3 {
   display: none;
 }
 
-
-#top-section{
+#top-section {
+  display: block;
   width: 100%;
   height: 100%;
   background-image: url("../img/bg_TOP.png");
@@ -468,51 +474,86 @@ footer .dummy .col-md-3{
   background-size: cover;
 }
 
-.top-body{
-  padding-left: 1.5em;
-  padding-top: 5em;
-}
-.top-header-list{
-  display: block;
+#top-left-section {
+  /* background: #849; */
   position: absolute;
-  right: 7%;
-  top: 0;
+  top: 0%;
+  height: 4em;
 }
 
+#top-right-section {
+  height: 100%;
+  margin-top: 6em;
+}
+.top-header-btn{
+  font-size: 21px;     
+}
+.top-header-list{
+  display: none;
+  color: #000;
+}
+#top-section #dev,
+#top-section #comp,
+#top-section #arrow{  
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;  
+  color: #849;
+
+}
+#top-section #dev{
+  position: absolute;
+  padding-top: 35em;
+  padding-left: 6em;
+}
+#top-section #comp{
+  position: absolute;
+  padding-top: 37em;
+  padding-left: 10em;
+}
+#top-section #arrow{
+  position: absolute;
+  padding-top: 40em;
+  padding-left: 20em;
+}
+#vertical-body{
+    display: none;
+
+}
 
 /*---Media Queries --*/
 
 @media (max-width: 992px) {}
 
-@media (min-width: 764px) {
-  .bigmap{
+@media (min-width: 576px) {
+  .bigmap {
     display: inline;
   }
-  
-  .mapcap,.mapimg{
+  .mapcap, .mapimg {
     display: none;
   }
-  footer{
+  footer {
     margin: auto 7em 7em 7em;
   }
-  
-  footer .my-1{
+  footer .my-1 {
     display: block;
   }
-  footer #right-footer{
+  footer #right-footer {
     display: inline-block;
-    position: relative; 
-    padding-right: -2em; 
-
+    position: relative;
+    padding-right: -2em;
   }
-  
-  footer .dummy .col-md-3{
+  footer .dummy .col-md-3 {
     display: inline;
   }
-  footer #right-footer p{
+  footer #right-footer p {
     position: relative;
     top: 50%;
-    
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 300;
@@ -520,27 +561,131 @@ footer .dummy .col-md-3{
     text-transform: uppercase;
     color: #000000;
   }
-  #top-section{
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  #top-section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
   }
+  #top-left-section {    
+    height: 100%;
+    width: 3em;
+    padding: 0;
+  }
+  #top-right-section {
+    height: 100%;
+    position: absolute;
+    margin-left: 3em;
+    margin-top: 0px;
+  }
+  .top-header-btn{
+    color: #FFFFFF;
+    background-color: #313541;
+    text-align: center;
+    font-size: 24px;    
+    padding-top: 1em;
+    padding-bottom: 10em;
+  }
+  .top-header-list{  
+    padding-top: 8em;
+    height: 100%;
+    text-align: center;
+    font-size: 17px;
+  }
+ /* #top-section #dev,
+  #top-section #comp,
+  #top-section #arrow{ 
+
+  }*/
   
-   
+  #menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #menu-bar li {
+    float: right;
+  }
+
+  #menu-bar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+  #menu-bar #thalescode{
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 110px;
+    letter-spacing: 5px;
+    
+  }
+  #menu-bar li a:hover:not(.title) {
+    opacity: 0.4;
+  }
+
+
+
 
 }
 
-@media (max-width: 500px) {
-  footer .dummy .col-md-3{
+/* xs screen media */
+
+@media (max-width: 575px) {
+  .top-header-list {
+    position: absolute;
+    right: 7%;
+    top: 20px;
+    opacity: 0.3;
+  }
+  footer .dummy .col-md-3 {
     display: none;
   }
-  footer .my-1{
+  footer .my-1 {
     display: none;
   }
+  #menu-bar{
+    display: none;
+  }
+  #vertical-header{
+    position: absolute;
+    display: block;
+    left: 0;
+  }
+  #vertical-thalescode{
+    display: block;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 1.08px;
+    color: #000000;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);    
+    padding-top: 9em;
+    padding-left: 2em;
+  }
+
   
+
 }
 
 /*---Firefox Bug Fix --*/
