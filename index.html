@@ -984,24 +984,33 @@
 				if(compname != ''){
 					if(!nameregex.test(compname)){
 						$('#compname').css("border", "5px solid red");
+					}else{
+						$('#compname').css("border", "1px solid #DCE0E8");
 					}
 				}
 
 				if(lastname != ''){
 					if(!nameregex.test(lastname)){
 						$('#lastname').css("border", "5px solid red");
+					}else{
+						$('#lastname').css("border", "1px solid #DCE0E8");
 					}
+					
 				}
 
 				if(firstname != ''){
 					if(!nameregex.test(firstname)){
 						$('#firstname').css("border", "5px solid red");
+					}else{
+						$('#firstname').css("border", "1px solid #DCE0E8");
 					}
 				}
 
 				if(email != ''){
 					if(!mailregex.test(email)){
 						$('#email').css("border", "5px solid red");
+					}else{
+						$('#email').css("border", "1px solid #DCE0E8");
 					}
 				}
 
