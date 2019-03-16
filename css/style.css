@@ -12,6 +12,7 @@ html, body {
 #about-info {
   margin-top: -20px;
   margin-bottom: -2em;
+  opacity: 0.6;
 }
 
 #about-info .stroke {
@@ -34,7 +35,17 @@ html, body {
   font-weight: bold;
   font-size: 25px;
   color: #342A2F;
-  margin-bottom: 0;
+}
+
+#title-1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 90px;
+  text-align: center;
+  color: #2B3247;
+  padding-top: 2em;
 }
 
 #info-btn {
@@ -49,6 +60,7 @@ html, body {
   text-transform: uppercase;
   color: #000000;
   position: absolute;
+  right: 2em;
   bottom: 4em;
 }
 
@@ -232,6 +244,7 @@ html, body {
   display: block;
   height: 100%;
   width: 100%;
+  padding-bottom: 7em;
   border: none;
 }
 
@@ -248,13 +261,6 @@ html, body {
 .card-img-overlay {
   color: #FFFFFF;
 }
-
-.card-title {
-  font-weight: bold;
-  line-height: 21px;
-  font-size: 18px;
-}
-
 .card-text {
   display: block;
   font-family: Ubuntu;
@@ -268,6 +274,12 @@ html, body {
   opacity: 0.6;
   overflow: hidden;
 }
+.card-title {
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 18px;
+}
+
 
 #card-link {
   display: block;
@@ -285,7 +297,6 @@ html, body {
   font-size: 14px;
   text-align: right;
   color: #000000;
-  /* margin: -20px -7px 0 0; */
   mix-blend-mode: normal;
   opacity: 0.4;
   display: block;
@@ -317,7 +328,7 @@ html, body {
 .img-text {
   display: block;
   position: absolute;
-  bottom: 30%;
+  bottom: 44%;
   padding-left: 0;
   font-family: Ubuntu;
   font-style: normal;
@@ -326,14 +337,6 @@ html, body {
 
 .img-text hr {
   margin-left: 0px;
-}
-
-.img-text p .text-size-11 {
-  font-size: 11px;
-}
-
-.img-text p .text-size-15 {
-  font-size: 15px;
 }
 
 #contact-info {
@@ -371,6 +374,18 @@ html, body {
 }
 
 #sub-title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2B3247;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+#sub-title-1 {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
@@ -429,7 +444,7 @@ footer .my-1 {
 footer .header {
   font-family: Ubuntu;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 11px;
   color: #000000;
 }
@@ -472,7 +487,6 @@ footer .dummy .col-md-3 {
 }
 
 #top-left-section {
-  /* background: #849; */
   position: absolute;
   top: 0%;
   height: 4em;
@@ -530,12 +544,12 @@ footer .dummy .col-md-3 {
 
 @media (max-width: 992px) {}
 
-@media (min-width: 576px) { 
-  
+/* big screen */
+@media (min-width: 576px) {
   .bigmap {
     display: inline;
   }
-  .vertical-nav {
+  .vertical-nav, #small-explore {
     display: none;
   }
   .mapcap, .mapimg {
@@ -639,13 +653,25 @@ footer .dummy .col-md-3 {
   }
   .top-body {
     margin-left: 3em;
-    margin-top: 3em;
+    margin-top: 2em;
     float: left;
     text-align: left;
   }
   .top-body .stroke {
     margin-left: 0px;
-
+  }
+  .top-body h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    color: #000000;
+  }
+  .top-body #big-scrn h6 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
   }
   #black-btn-1, #black-btn-2 {
     background: #000;
@@ -653,52 +679,268 @@ footer .dummy .col-md-3 {
     box-sizing: border-box;
     color: #FFFFFF;
     padding: 0.5em 3em 0.5em 3em;
-    margin-top:2em;
-    
+    margin-top: 2em;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
-  #black-btn-2{
+  #black-btn-2 {
     margin-left: 2em;
   }
-  #top-message{
+  #top-message {
     margin-top: 3em;
     width: 638;
     height: 257;
     background: #FFFFFF;
-    padding: 4em;
+    padding: 1em 3.5em 2em 3.5em;
     font-size: 15px;
     color: #000;
   }
-  #top-message p{
+  #top-message p {
+    margin-top: -4em;
+    text-transform: lowercase;
     opacity: 0.3;
   }
-  
-  #header-img img{
+  #top-line {
+    display: block;
+    margin-right: 0%;
+    margin-top: 0%;
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 80px;
+    opacity: 0.3;
+  }
+  #header-img img {
     position: absolute;
     right: 8%;
     top: 20%;
-    
   }
-  #about-section{
+  #about-section, #jobpost-section #section-title, #service-section #small-service {
     display: none;
   }
-  #font-14{
+  #font-14 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 22px;    
-    color: #000000;    
+    line-height: 22px;
+    color: #000000;
     mix-blend-mode: normal;
     opacity: 0.6;
     width: 550px;
   }
-  #about-2 .stroke{
+  #about-2 .stroke {
     margin-left: 0px;
     width: 40px;
+  }
+  #jobpost-section {
+    padding-right: 7em;
+  }
+  #about-2 #info-btn {
+    left: 1.5em;
+  }
+  #big-service #sub-title-1 {
+    margin-top: 0em;
+    text-align: center;
+  }
+  #big-service #title-1 {
+    margin-bottom: -0.3em;
+    padding-bottom: 0em;
+  }
+  #emp, #cand {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #8C93AA;
+  }
+  #emp.active, #cand.active {
+    color: #000;
+  }
+  #emp.active .stroke, #cand.active .stroke {
+    border: 2px solid #000;
+    width: 40px;
+  }
+  #service-bottom {
+    position: absolute;
+    bottom: 2em;
+    right: 3em;
+  }
+  #info-btn-1 {
+    opacity: 0.2;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    
+  }
+  #section-btm{
+    display: block;
+    position: absolute;
+    right: 7em;
+    text-align: right;
+  }
+  #service-section {
+    padding-right: 5em;
+    background: #FFFFFF;
+  }
+  #emp-slide,#cand-slide{
+    display: none;
+  }
+  
+  #emp-tab-item{
+    padding-left: 2em;
+  }
+  #emp-tab-item h5{
+    font-weight: bold;
+    
+  }
+  #emp-tab-item .text-primary,
+  #emp-tab-item .stroke{
+    margin-left: 0;
+    text-align: left;
+  }
+  #emp-tab-item p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  #emp-tab-item .stroke{
+    width: 23px;
+  }
+  #explore-section{
+    padding-right: 7em;
+  }
+  #big-explore{
+    margin-bottom: -1em;
 
   }
+  .social{
+    display: none;
+  }
+  .img-text{
+    left: 30%;
+    top: 20%;
+
+  }
+  .img-text .text-size-11{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px ; 
+    line-height: 26px;
+    letter-spacing: 1.73333px;
+  }
+  .img-text .text-size-15{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px ;
+    line-height: 26px;
+  }
+  .img-text .stroke{
+    border: 6px solid #FFFFFF;
+    margin-left: 40%;
+  }
+  .img-text p{
+    text-align: center;
+  }
+  .card-body #card-link{
+    display: none;
+
+  }
+  .card-body{
+    text-align: left;
+    padding-left: 0px;
+  }
+  .card-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;    
+    line-height: 40px;
+    color: #000000;
+    
+  }
+  .card-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;    
+    color: #8C93AA;
+    padding-bottom: 2.5em;
+  }
+  #right-text{
+    text-shadow: none;
+    position: absolute;
+    bottom: 2em;
+    right: 0%;
+    font-size: 20px;
+    color: #8C93AA;
+  }
+  
+  #left-icon{
+    width: 100%;
+    position: absolute;
+    bottom: 2em;
+    left: 0%;
+  }
+  #left-icon a{
+    color: #FFFFFF;
+    margin-right: 0.7em;
+    opacity: 0.3;
+    background: #000;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;    
+    line-height: 2em;
+    
+  }
+  #contact-section #section-title{
+    display: none;
+  }
+  #contact-section #title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #2B3247;
+  }
+  #contact-info .tel,#contact-info .addr,#contact-info .contact{
+    font-weight: bold;
+    font-family: SanFranciscoDisplay;
+    font-size: 24px;
+    line-height: 36px;    
+    color: #313541; 
+  }
+  form{
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+  form .form-control{
+    border-radius: 0px;
+  }
+  
+
 
 }
+
+/* end big screen */
 
 /* xs screen media */
 
@@ -709,13 +951,13 @@ footer .dummy .col-md-3 {
     top: 20px;
     opacity: 0.3;
   }
-  footer .dummy .col-md-3,#about-2 {
+  footer .dummy .col-md-3, #about-2, #sub-title-1, #service-section #big-service,#service-section #section-btm,.big-scrn-line {
     display: none;
   }
-  footer .my-1 {
+  footer .my-1,#employer #emp-tab-item,#candidate #emp-tab-item,#big-explore{
     display: none;
   }
-  #menu-bar {
+  #menu-bar,#left-icon {
     display: none;
   }
   .vertical-nav {
@@ -725,13 +967,15 @@ footer .dummy .col-md-3 {
   }
   .vertical-nav .vertical-text {
     display: block;
-    padding-top: 12.5em;
+    padding-top: 12em;
     padding-left: 7em;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    font-style: normal;
+    font-weight: bold;
   }
   #vertical-item {
     position: absolute;
@@ -749,14 +993,37 @@ footer .dummy .col-md-3 {
     text-transform: uppercase;
     margin-bottom: 0.5em;
   }
-  .top-body #big-scrn, .top-body .stroke ,
-  #black-btn-1, #black-btn-2,#top-message,#header-img {
+  .top-body #big-scrn, .top-body .stroke, #black-btn-1, #black-btn-2, #top-message, #header-img {
     display: none;
   }
   .top-body {
-    margin-top: 10px;
+    margin-top: 9px;
+  }
+  .top-body h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: #000000;
+  }
+  .top-body #small-scrn h6 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+  }
+  #info-btn {
+    bottom: 3.5em;
+  }
+  .img-text p .text-size-11 {
+    font-size: 11px;
   }
   
+  .img-text p .text-size-15 {
+    font-size: 15px;
+  }
+
 }
 
 /*---Firefox Bug Fix --*/

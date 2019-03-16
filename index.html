@@ -55,22 +55,23 @@
 
 			<div class="top-body">
 				<hr class="stroke">
-				<h2>ThalesCode</h2>
+				<h5>ThalesCode</h5>
 				<div id="small-scrn">
-					<h4>The best way</h4>
-					<h4>to Learn IT </h4>
+					<h6>The best way</h6>
+					<h6>to Learn IT </h6>
 
 				</div>
 				<div id="big-scrn">
 
-					<h4>The best way to learn how to</h4>
-					<h4>programming online</h4>
+					<h6>The best way to learn how to</h6>
+					<h6>programming online</h6>
 
 				</div>
 				<button id="black-btn-1">developers</button>
 				<button id="black-btn-2">companies</button>
 				<div id="top-message">
-					<p>With ThalesCode you will learn new technologies base <br>
+					<span id="top-line">"</span>
+					<p>with ThalesCode you will learn new technologies base <br>
 						on continues development with a flexible schedule,<br>
 						where you can focus and participate with others <br>
 						online, to find more come and join us.
@@ -79,7 +80,7 @@
 
 			</div>
 			<div id="header-img">
-				<img src="img/human.png" width="350" height="350">
+				<img src="img/human.png" width="300" height="300">
 
 			</div>
 
@@ -170,13 +171,14 @@
 		</div>
 		<hr class="my-1" id="about-section">
 		<!-- Jobpost -->
-		<div class="container-fluid padding">
+		<div class="container-fluid padding" id="jobpost-section">
 			<div class="row Jumbotron">
 				<div class="col-12">
 					<p id="section-title">JOB POST</p>
 				</div>
 				<div class="col-6">
 					<p id="title">Latest Jobs</p>
+					<p id="sub-title-1"> Motivo Job Post</p>
 				</div>
 				<div class="col-6">
 					<button type="button" class="btn btn-outline-secondary " id="info-btn">
@@ -186,6 +188,7 @@
 						</span>
 					</button>
 				</div>
+
 			</div>
 
 			<!--- Image Slider -->
@@ -316,8 +319,9 @@
 
 		<!-- Services -->
 		<div id="service-section">
-			<div class="container-fluid">
-				<div class="row Jumbotron">
+			<div class="container-fluid ">
+				<div class="row Jumbotron" id="small-service">
+
 					<div class="col-12">
 						<p id="section-title" style="color: #ffffff;">Services</p>
 					</div>
@@ -336,125 +340,222 @@
 					</div>
 
 				</div>
-			</div>
-			<div class="nav-center">
-				<ul class="nav nav-pills">
+				<div id="big-service">
+					<p id="title-1">
+						Why to choose ThalesCode
+					</p>
+					<p id="sub-title-1">
+						why developers choose us
 
-					<li class="nav-item ">
-						<a class="active" data-toggle="pill" href="#employer" id="emp">
-							Employers
-							<hr class="stroke">
-						</a>
+					</p>
+				</div>
 
-					</li>
+				<div class="nav-center">
+					<ul class="nav nav-pills">
 
-					<li class="nav-item">
-						<a data-toggle="pill" href="#candidate" id="cand">
-							Candidates
-							<hr class="stroke">
-						</a>
-					</li>
+						<li class="nav-item ">
+							<a class="active" data-toggle="pill" href="#employer" id="emp">
+								Employers
+								<hr class="stroke">
+							</a>
 
+						</li>
 
-				</ul>
-			</div>
-			<div class="tab-content">
-				<!-- 	Employer -->
-				<div id="employer" class="tab-pane container active">
+						<li class="nav-item">
+							<a data-toggle="pill" href="#candidate" id="cand">
+								Candidates
+								<hr class="stroke">
+							</a>
+						</li>
 
-					<div id="emp-slide" class="carousel slide" data-ride="carousel">
-						<ul class="carousel-indicators">
-							<li data-target="#emp-slide" data-slide-to="0" class="active"></li>
-							<li data-target="#emp-slide" data-slide-to="1"></li>
-							<li data-target="#emp-slide" data-slide-to="2"></li>
-						</ul>
-						<div class="carousel-inner">
+					</ul>
+				</div>
+				<div class="tab-content">
+					<!-- 	Employer -->
+					<div id="employer" class="tab-pane container active">
 
-							<div class="carousel-item active">
+						<div id="emp-slide" class="carousel slide" data-ride="carousel">
+							<ul class="carousel-indicators">
+								<li data-target="#emp-slide" data-slide-to="0" class="active"></li>
+								<li data-target="#emp-slide" data-slide-to="1"></li>
+								<li data-target="#emp-slide" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+
+								<div class="carousel-item active">
+									<h1 class="text-primary">01</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
+								<div class="carousel-item ">
+									<h1 class="text-primary">02</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
+								<div class="carousel-item ">
+									<h1 class="text-primary">03</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row" id="emp-tab-item">
+							<div class="col-3">
 								<h1 class="text-primary">01</h1>
 								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
+								<h5>IT Training</h5>
+								<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. 
 								</p>
 
 							</div>
-							<div class="carousel-item ">
+							<div class="col-3">
 								<h1 class="text-primary">02</h1>
 								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
+								<h5>Global Recruitment</h5>
+								<p>We focuses on recruit high skilled engineers with knowledge and experience from all around the world, providing qualify candidates who are ready to create innovating solutions for businesses.
 								</p>
 
-							</div>
-							<div class="carousel-item ">
+							</div>							
+							<div class="col-3">
 								<h1 class="text-primary">03</h1>
 								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
+								<h5>HR - HRBP</h5>
+								<p>Due to our understanding of technologies, our recruiters not only provide candidates to companies but also consulting on how to structure teams to create a flexible working environment between Japanese and foreigner engineers.
 								</p>
+
+							</div>
+							<div class="col-3">
+									<h1 class="text-primary">04</h1>
+									<hr class="stroke">
+									<h5>LifeCare Support</h5>
+									<p>Motivo provides a full relocating package support for candidates who are coming from abroad, taking care from their VISAS support, allocation, life setup and incorporate themselves into the Japanese culture and community. 
+									</p>
+	
+							</div>
+						</div>
+					</div>
+
+					<!-- Candidate -->
+					<div id="candidate" class="tab-pane container fade">
+
+						<div id="cand-slide" class="carousel slide" data-ride="carousel">
+							<ul class="carousel-indicators">
+								<li data-target="#cand-slide" data-slide-to="0" class="active"></li>
+								<li data-target="#cand-slide" data-slide-to="1"></li>
+								<li data-target="#cand-slide" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner ">
+
+								<div class="carousel-item active">
+									<h1 class="text-primary">04</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
+								<div class="carousel-item ">
+									<h1 class="text-primary">05</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
+								<div class="carousel-item ">
+									<h1 class="text-primary">06</h1>
+									<hr class="stroke">
+									<h5>IT Knowledge</h5>
+									<p>Our team includes people who specialize in IT development and product development
+										services who have the experience and knowledge to understand what our clients
+										need.
+									</p>
+
+								</div>
 
 							</div>
 
 						</div>
-
+						<div class="row" id="emp-tab-item">
+								<div class="col-3">
+									<h1 class="text-primary">01</h1>
+									<hr class="stroke">
+									<h5>IT Training</h5>
+									<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. 
+									</p>
+	
+								</div>
+								<div class="col-3">
+									<h1 class="text-primary">02</h1>
+									<hr class="stroke">
+									<h5>Global Recruitment</h5>
+									<p>We focuses on recruit high skilled engineers with knowledge and experience from all around the world, providing qualify candidates who are ready to create innovating solutions for businesses.
+									</p>
+	
+								</div>							
+								<div class="col-3">
+									<h1 class="text-primary">03</h1>
+									<hr class="stroke">
+									<h5>HR - HRBP</h5>
+									<p>Due to our understanding of technologies, our recruiters not only provide candidates to companies but also consulting on how to structure teams to create a flexible working environment between Japanese and foreigner engineers.
+									</p>
+	
+								</div>
+								<div class="col-3">
+										<h1 class="text-primary">04</h1>
+										<hr class="stroke">
+										<h5>LifeCare Support</h5>
+										<p>Motivo provides a full relocating package support for candidates who are coming from abroad, taking care from their VISAS support, allocation, life setup and incorporate themselves into the Japanese culture and community. 
+										</p>
+		
+								</div>
+							</div>
 					</div>
+
 				</div>
-				<!-- Candidate -->
-				<div id="candidate" class="tab-pane container fade">
+				<div class="container-fluid" id="section-btm">
+					<button type="button" class="btn btn-outline-secondary " id="info-btn-1">
+						FIND MORE
+						<span>
+							&nbsp;<i class="fas fa-angle-right"></i>
+						</span>
+					</button>
+					
 
-					<div id="cand-slide" class="carousel slide" data-ride="carousel">
-						<ul class="carousel-indicators">
-							<li data-target="#cand-slide" data-slide-to="0" class="active"></li>
-							<li data-target="#cand-slide" data-slide-to="1"></li>
-							<li data-target="#cand-slide" data-slide-to="2"></li>
-						</ul>
-						<div class="carousel-inner ">
-
-							<div class="carousel-item active">
-								<h1 class="text-primary">04</h1>
-								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
-								</p>
-
-							</div>
-							<div class="carousel-item ">
-								<h1 class="text-primary">05</h1>
-								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
-								</p>
-
-							</div>
-							<div class="carousel-item ">
-								<h1 class="text-primary">06</h1>
-								<hr class="stroke">
-								<h5>IT Knowledge</h5>
-								<p>Our team includes people who specialize in IT development and product development
-									services who have the experience and knowledge to understand what our clients need.
-								</p>
-
-							</div>
-
-						</div>
-
-					</div>
 				</div>
-
 			</div>
 
-
 		</div>
+		<br>
+		<hr class="my-1 big-scrn-line">
+
 
 		<!--- Explore -->
-		<div class="container-fluid padding">
+		<div class="container-fluid padding" id="explore-section">
+
 			<!-- Explore Title -->
-			<div class="Jumbotron">
+			<div class="Jumbotron" id="small-explore">
 				<div class="col-12">
 					<p id="section-title">Explore</p>
 				</div>
@@ -465,11 +566,25 @@
 				</div>
 
 			</div>
+			<div class="row Jumbotron" id="big-explore">
+					<div class="col-6">
+						<p id="title">ThalesBlog</p>
+						<p id="sub-title-1">learn more about latest technologies</p>
+					</div>
+					<div class="col-6">
+						<button type="button" class="btn btn-outline-secondary " id="info-btn">
+								READ MORE
+								<span>
+									&nbsp;<i class="fas fa-angle-right"></i>
+								</span>
+						</button>						
+					</div>	
+			</div>
 			<div class="row">
 
 				<div class="col-xs-12 col-md-7 ">
 					<div class="card">
-						<img class="card-imd-top" src="img/Object1.jpg">
+						<img class="card-imd-top" src="img/Object.png">
 						<div class="card-img-overlay">
 							<div class="social">
 								<div class="share-btn">
@@ -487,16 +602,17 @@
 							<div class="img-text">
 								<hr class="stroke">
 								<p>
-									<span class="text-size-11">#TOKYOTECH</span>
+									<span class="text-size-11">#TECHNOLOGY</span>
 									<br>
-									<span class="text-size-15">2019.03.13</span>
+									<br class="big-scrn-line">
+									<span class="text-size-15">2018.10.31</span>
 								</p>
 
 							</div>
 						</div>
 						<div class="card-body">
 							<h4 class="card-title">
-								How to Open a Bank Account in Japan
+								A step-by-step guide to getting started with HTML forms
 								<a href="#" id="card-link">
 									READ MORE
 									<span>
@@ -506,11 +622,15 @@
 								</a>
 							</h4>
 
-							<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-								consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div class="card-text">
+									HTML forms are required when you want to collect some data from the person who visits your website. For example, when you register/login for applications like Uber, Netflix, or Facebook, you enter information like Name, Email, and Password through HTML forms.
+							</div>
+							<div id="left-icon">
+									<a><i class="fab fa-google-plus-g "></i></a>
+									<a><i class="fab fa-twitter"></i></a>
+									<a><i class="fab fa-linkedin "></i></a>
+									<a><i class="fab fa-facebook-f fa-xs"></i></a>
+								
 							</div>
 							<div id="right-text">
 								by
@@ -522,7 +642,7 @@
 				</div>
 				<div class="col-xs-12 col-md-5 ">
 					<div class="card">
-						<img class="card-imd-top" src="img/Object1.jpg">
+						<img class="card-imd-top" src="img/Object3.jpg">
 						<div class="card-img-overlay">
 							<div class="social">
 								<div class="share-btn">
@@ -542,13 +662,14 @@
 								<p>
 									<span class="text-size-11">#TOKYOTECH</span>
 									<br>
-									<span class="text-size-15">2019.03.13</span>
+									<br class="big-scrn-line">
+									<span class="text-size-15">2018.05.31</span>
 								</p>
 							</div>
 						</div>
 						<div class="card-body">
 							<h4 class="card-title">
-								How to Open a Bank Account in Japan
+									These common mistakes will lead to immortal bugs. Learn how to avoid them.
 								<a href="#" id="card-link">
 									READ MORE
 									<span>
@@ -557,11 +678,15 @@
 									</span>
 								</a>
 							</h4>
-							<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-								consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div class="card-text">
+									The question that you or your teammate would ask after the product manager posts a snapshot of the bug. This whole event feels like a Deja Vu...
+							</div>
+							<div id="left-icon">
+									<a><i class="fab fa-google-plus-g "></i></a>
+									<a><i class="fab fa-twitter"></i></a>
+									<a><i class="fab fa-linkedin "></i></a>
+									<a><i class="fab fa-facebook-f fa-xs"></i></a>
+								
 							</div>
 							<div id="right-text">
 								by
@@ -575,7 +700,7 @@
 				</div>
 				<div class="col-xs-12 col-md-5 ">
 					<div class="card">
-						<img class="card-imd-top" src="img/Object1.jpg">
+						<img class="card-imd-top" src="img/Object2.jpg">
 						<div class="card-img-overlay">
 							<div class="social">
 								<div class="share-btn">
@@ -595,13 +720,14 @@
 								<p>
 									<span class="text-size-11">#TOKYOTECH</span>
 									<br>
-									<span class="text-size-15">2019.03.13</span>
+									<br class="big-scrn-line">
+									<span class="text-size-15">2018.05.31</span>
 								</p>
 							</div>
 						</div>
 						<div class="card-body">
 							<h4 class="card-title">
-								How to Open a Bank Account in Japan
+									How to build a data science project from scratch
 								<a href="#" id="card-link">
 									READ MORE
 									<span>
@@ -610,11 +736,15 @@
 									</span>
 								</a>
 							</h4>
-							<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-								consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div class="card-text">
+									There are many online courses about data science and machine learning that will guide you through a theory and provide you with some code examples and an analysis of very clean data. However, in order to start...
+							</div>
+							<div id="left-icon">
+									<a><i class="fab fa-google-plus-g "></i></a>
+									<a><i class="fab fa-twitter"></i></a>
+									<a><i class="fab fa-linkedin "></i></a>
+									<a><i class="fab fa-facebook-f fa-xs"></i></a>
+								
 							</div>
 							<div id="right-text">
 								by
@@ -646,13 +776,14 @@
 								<p>
 									<span class="text-size-11">#TOKYOTECH</span>
 									<br>
-									<span class="text-size-15">2019.03.13</span>
+									<br class="big-scrn-line">
+									<span class="text-size-15">2018.05.31</span>
 								</p>
 							</div>
 						</div>
 						<div class="card-body">
 							<h4 class="card-title">
-								How to Open a Bank Account in Japan
+									How not to be afraid of GIT anymore
 								<a href="#" id="card-link">
 									READ MORE
 									<span>
@@ -661,11 +792,15 @@
 									</span>
 								</a>
 							</h4>
-							<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-								consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div class="card-text">
+									Alright, alright, I’m not being too helpful, yet. Here’s the basic idea: As projects get too large, with too many contributors, it gets impossible to track who did what and when. Did someone introduce a change that broke the entire system? How do you figure out what that change was? How do you go back to how things were before? Back to the unbroken wonderland?
+							</div>
+							<div id="left-icon">
+									<a><i class="fab fa-google-plus-g "></i></a>
+									<a><i class="fab fa-twitter"></i></a>
+									<a><i class="fab fa-linkedin "></i></a>
+									<a><i class="fab fa-facebook-f fa-xs"></i></a>
+								
 							</div>
 							<div id="right-text">
 								by
@@ -680,9 +815,10 @@
 			</div>
 		</div>
 		<hr class="my-1">
+		<br class="big-scrn-line">
 
 		<!--- Contact -->
-		<div class="container-fluid padding">
+		<div class="container-fluid padding" id="contact-section">
 			<div class="row ">
 				<div class="col-md-6">
 					<p id="section-title">Contact</p>
@@ -708,7 +844,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<form>
+					<form >
 						<div class="form-group">
 							<input type="text" class="form-control" id="compname" placeholder="COMPANY NAME"
 								name="compname">
@@ -728,7 +864,7 @@
 							<textarea class="form-control" id="message" placeholder="MESSAGE..." rows="6"></textarea>
 						</div>
 						<div class="form-group">
-							<button type="submit" class="btn btn-lg form-control">SEND</button>
+							<button type="button" class="btn submit-btn btn-lg form-control" >SEND</button>
 						</div>
 
 					</form>
@@ -834,6 +970,42 @@
 			$(".vertical-text").on("click", function () {
 				$(this).siblings().toggle();
 
+			});
+
+			//validate form input
+			$(".submit-btn").on("click", function () {
+				var compname = document.getElementById("compname").value;
+				var lastname = document.getElementById("lastname").value;
+				var firstname = document.getElementById("firstname").value;
+				var email = document.getElementById("email").value;
+				var nameregex = /^[a-zA-Z ]*$/;
+				var mailregex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+				if(compname != ''){
+					if(!nameregex.test(compname)){
+						$('#compname').css("border", "5px solid red");
+					}
+				}
+
+				if(lastname != ''){
+					if(!nameregex.test(lastname)){
+						$('#lastname').css("border", "5px solid red");
+					}
+				}
+
+				if(firstname != ''){
+					if(!nameregex.test(firstname)){
+						$('#firstname').css("border", "5px solid red");
+					}
+				}
+
+				if(email != ''){
+					if(!mailregex.test(email)){
+						$('#email').css("border", "5px solid red");
+					}
+				}
+
+  
 			});
 
 
