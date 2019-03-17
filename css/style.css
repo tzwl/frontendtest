@@ -422,12 +422,6 @@ form .btn {
   color: #FFFFFF;
 }
 
-.mapcap {
-  position: relative;
-  left: 40%;
-  bottom: 45%;
-}
-
 .bigmap {
   display: none;
 }
@@ -551,7 +545,7 @@ footer .dummy .col-md-3 {
   .vertical-nav, #small-explore {
     display: none;
   }
-  .mapcap, .mapimg {
+  .mapimg {
     display: none;
   }
   footer {
@@ -975,6 +969,7 @@ footer .dummy .col-md-3 {
     transform: rotate(90deg);
     font-style: normal;
     font-weight: bold;
+    font-size: 13px;
   }
   #vertical-item {
     position: absolute;
