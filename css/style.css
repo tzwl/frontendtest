@@ -504,30 +504,27 @@ footer .dummy .col-md-3 {
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
-  line-height: 68px;
-  text-align: center;
   letter-spacing: 0.33px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
-#top-section #dev {
+#dev-comp{
   position: absolute;
-  padding-top: 35em;
-  padding-left: 6em;
+  bottom: 0%;
+  margin-bottom: -6em;
+}
+#dev-comp #dev{
+  padding-left: 2em;
+}
+#dev-comp #comp{
+  padding-left: 7em;
+
+}
+#dev-comp #arrow{
+  padding-left: 18em;
 }
 
-#top-section #comp {
-  position: absolute;
-  padding-top: 37em;
-  padding-left: 10em;
-}
 
-#top-section #arrow {
-  position: absolute;
-  padding-top: 40em;
-  padding-left: 20em;
-}
 
 .vertical-body {
   display: none;
@@ -545,7 +542,7 @@ footer .dummy .col-md-3 {
   .vertical-nav, #small-explore {
     display: none;
   }
-  .mapimg {
+  .mapimg,#dev-comp {
     display: none;
   }
   footer {
