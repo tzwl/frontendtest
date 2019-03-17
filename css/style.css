@@ -126,7 +126,6 @@ html, body {
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.6;
-  padding: 0.5em 1.5em;
 }
 
 .stroke {
@@ -135,8 +134,8 @@ html, body {
 }
 
 .carousel-indicators li {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 100%;
   background: #DFDFDF;
 }
@@ -261,6 +260,7 @@ html, body {
 .card-img-overlay {
   color: #FFFFFF;
 }
+
 .card-text {
   display: block;
   font-family: Ubuntu;
@@ -274,12 +274,12 @@ html, body {
   opacity: 0.6;
   overflow: hidden;
 }
+
 .card-title {
   font-weight: bold;
   line-height: 21px;
   font-size: 18px;
 }
-
 
 #card-link {
   display: block;
@@ -508,33 +508,93 @@ footer .dummy .col-md-3 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-#dev-comp{
+
+#dev-comp {
   position: absolute;
   bottom: 0%;
   margin-bottom: -6em;
 }
-#dev-comp #dev{
+
+#dev-comp #dev {
   padding-left: 2em;
 }
-#dev-comp #comp{
-  padding-left: 7em;
 
+#dev-comp #comp {
+  padding-left: 7em;
 }
-#dev-comp #arrow{
+
+#dev-comp #arrow {
   padding-left: 18em;
 }
-
-
 
 .vertical-body {
   display: none;
 }
+
+/* multi item carousel css */
+
+#carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #jobpost-section #title, #big-explore #title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #2B3247;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  #jobpost-section #title, #big-explore #title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: #2B3247;
+  }
+}
+
+@media (min-width: 992px) {
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  #jobpost-section #title, #big-explore #title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: #2B3247;
+  }
+}
+
+/* end multi item carousel css */
 
 /*---Media Queries --*/
 
 @media (max-width: 992px) {}
 
 /* big screen */
+
 @media (min-width: 576px) {
   .bigmap {
     display: inline;
@@ -542,7 +602,7 @@ footer .dummy .col-md-3 {
   .vertical-nav, #small-explore {
     display: none;
   }
-  .mapimg,#dev-comp {
+  .mapimg, #dev-comp {
     display: none;
   }
   footer {
@@ -654,14 +714,14 @@ footer .dummy .col-md-3 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 62px;
     color: #000000;
   }
   .top-body #big-scrn h6 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 38px;
   }
   #black-btn-1, #black-btn-2 {
     background: #000;
@@ -727,7 +787,8 @@ footer .dummy .col-md-3 {
     width: 40px;
   }
   #jobpost-section {
-    padding-right: 7em;
+    padding-top: 4em;
+    padding-right: 6em;
   }
   #about-2 #info-btn {
     left: 1.5em;
@@ -771,9 +832,8 @@ footer .dummy .col-md-3 {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    
   }
-  #section-btm{
+  #section-btm {
     display: block;
     position: absolute;
     right: 7em;
@@ -783,96 +843,89 @@ footer .dummy .col-md-3 {
     padding-right: 5em;
     background: #FFFFFF;
   }
-  #emp-slide,#cand-slide{
+  #emp-slide, #cand-slide {
     display: none;
   }
-  
-  #emp-tab-item{
+  #emp-tab-item {
     padding-left: 2em;
   }
-  #emp-tab-item h5{
+  #emp-tab-item h5 {
     font-weight: bold;
-    
   }
-  #emp-tab-item .text-primary,
-  #emp-tab-item .stroke{
+  #emp-tab-item .text-primary, #emp-tab-item .stroke {
     margin-left: 0;
     text-align: left;
   }
-  #emp-tab-item p{
+  #emp-tab-item p {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     opacity: 0.5;
   }
-  #emp-tab-item .stroke{
+  #emp-tab-item .stroke {
     width: 23px;
   }
-  #explore-section{
+  #explore-section {
     padding-right: 7em;
   }
-  #big-explore{
+  #big-explore {
     margin-bottom: -1em;
-
   }
-  .social{
+  .social {
     display: none;
   }
-  .img-text{
+  .img-text {
     left: 30%;
     top: 20%;
-
   }
-  .img-text .text-size-11{
+  .img-text .text-size-11 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px ; 
+    font-size: 26px;
     line-height: 26px;
     letter-spacing: 1.73333px;
   }
-  .img-text .text-size-15{
+  .img-text .text-size-15 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px ;
+    font-size: 40px;
     line-height: 26px;
   }
-  .img-text .stroke{
+  .img-text .stroke {
     border: 6px solid #FFFFFF;
     margin-left: 40%;
   }
-  .img-text p{
+  .img-text p {
     text-align: center;
   }
-  .card-body #card-link{
+  .card-body #card-link {
     display: none;
-
   }
-  .card-body{
+  .card-body {
     text-align: left;
     padding-left: 0px;
   }
-  .card-title{
+  .card-title {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;    
+    font-size: 40px;
     line-height: 40px;
     color: #000000;
-    
   }
-  .card-text{
+  .card-text {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
-    text-align: justify;    
+    text-align: justify;
     color: #8C93AA;
     padding-bottom: 2.5em;
   }
-  #right-text{
+  #right-text {
     text-shadow: none;
     position: absolute;
     bottom: 2em;
@@ -880,14 +933,13 @@ footer .dummy .col-md-3 {
     font-size: 20px;
     color: #8C93AA;
   }
-  
-  #left-icon{
+  #left-icon {
     width: 100%;
     position: absolute;
     bottom: 2em;
     left: 0%;
   }
-  #left-icon a{
+  #left-icon a {
     color: #FFFFFF;
     margin-right: 0.7em;
     opacity: 0.3;
@@ -896,14 +948,13 @@ footer .dummy .col-md-3 {
     height: 2em;
     border-radius: 100%;
     text-align: center;
-    display: inline-block;    
+    display: inline-block;
     line-height: 2em;
-    
   }
-  #contact-section #section-title{
+  #contact-section #section-title {
     display: none;
   }
-  #contact-section #title{
+  #contact-section #title {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -911,23 +962,62 @@ footer .dummy .col-md-3 {
     line-height: 60px;
     color: #2B3247;
   }
-  #contact-info .tel,#contact-info .addr,#contact-info .contact{
+  #contact-info .tel, #contact-info .addr, #contact-info .contact {
     font-weight: bold;
     font-family: SanFranciscoDisplay;
     font-size: 24px;
-    line-height: 36px;    
-    color: #313541; 
+    line-height: 36px;
+    color: #313541;
   }
-  form{
+  form {
     padding-top: 2em;
     padding-bottom: 3em;
   }
-  form .form-control{
+  form .form-control {
     border-radius: 0px;
   }
-  
-
-
+  .carousel-inner {
+    box-shadow: none;
+  }
+  #carousel {
+    padding-top: 2em;
+  }
+  .slide-box, .slide-box h3, .slide-box h5, .slide-box p {
+    text-align: left;
+    padding-left: 0%;
+  }
+  .slide-box .stroke {
+    margin-left: 0%;
+  }
+  .slide-box div h3 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: normal;
+    color: #2B3247;
+  }
+  .slide-box div h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  .carousel-indicators {
+    padding-bottom: 3em;
+  }
+  .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+  }
+  .slide-box hr:not(.stroke){
+    width: 95%;
+    margin-left: 0%;
+  }
 }
 
 /* end big screen */
@@ -941,13 +1031,13 @@ footer .dummy .col-md-3 {
     top: 20px;
     opacity: 0.3;
   }
-  footer .dummy .col-md-3, #about-2, #sub-title-1, #service-section #big-service,#service-section #section-btm,.big-scrn-line {
+  footer .dummy .col-md-3, #about-2, #sub-title-1, #service-section #big-service, #service-section #section-btm, .big-scrn-line {
     display: none;
   }
-  footer .my-1,#employer #emp-tab-item,#candidate #emp-tab-item,#big-explore{
+  footer .my-1, #employer #emp-tab-item, #candidate #emp-tab-item, #big-explore {
     display: none;
   }
-  #menu-bar,#left-icon {
+  #menu-bar, #left-icon {
     display: none;
   }
   .vertical-nav {
@@ -1010,9 +1100,15 @@ footer .dummy .col-md-3 {
   .img-text p .text-size-11 {
     font-size: 11px;
   }
-  
   .img-text p .text-size-15 {
     font-size: 15px;
+  }
+  #service-section {
+    margin-top: 80px;
+  }
+  .carousel-item .d-block.d-sm-none{
+    padding:2em 4em 0 4em;
+
   }
 
 }
